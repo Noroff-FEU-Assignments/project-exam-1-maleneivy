@@ -1,0 +1,116 @@
+/* Mobile view */
+
+/* Recipe Card Styles */
+
+.wpzoom-recipe-card-print-link,
+.recipe-card-author {
+    display: none;
+}
+
+.wp-block-wpzoom-recipe-card-block-recipe-card,
+.wpzoom-custom-recipe-card-post {
+    display: grid;
+    grid-template-columns: 6;
+    max-width: 100%;
+    margin: 30px auto;
+    position: relative;
+}
+
+.recipe-card-image figure {
+    margin: 0;
+}
+
+.recipe-card-image img {
+    width: 90vw;
+    height: 30vh;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 9px;
+    border-color: #B89E9E;
+    margin: auto;
+    display: block;
+}
+
+.wpzoom-custom-recipe-card-post {
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+.recipe-card-ingredients,
+.recipe-card-directions {
+    border-style: solid;
+    border-radius: 27px;
+    border-width: 4px;
+    border-color: #A3B7A2;
+    padding: 20px;
+    margin: 20px 10px;
+    font-family: grandma, sans-serif;
+}
+
+.ingredients-title,
+.notes-title {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.ingredient-item,
+.directions-list,
+.recipe-card-notes-list {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.blog-text_upper {
+    padding-bottom: 50px;
+    font-family: halcom, sans-serif;
+    font-size: 1em;
+}
+
+.recipe-card-title {
+    font-size: 1.5rem;
+    font-family: grandma, sans-serif;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+/* Posted note */
+
+.posted-it {
+    background-color: #D3F5D5;
+    position: absolute;
+    z-index: +1;
+    grid-column: 3;
+    height: 90px;
+    width: 70px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 9px;
+    border-color: #B89E9E;
+    margin: 110px -160px;
+    font-family: grandma, sans-serif;
+    font-size: 12px;
+}
+
+/* Loader */
+
+.loader {
+    border: 20px solid #f3f3f3;
+    border-top: 20px solid #054465;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
