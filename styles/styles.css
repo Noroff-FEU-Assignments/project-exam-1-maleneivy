@@ -1,0 +1,59 @@
+/*media desktop styles*/
+
+/* Header */
+
+header ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+/*media mobile styles*/
+@media only screen and (max-width:926px) {
+
+    /* Header mobile */
+
+    header {
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .search-icon,
+    .logo {
+        width: 5vh;
+    }
+
+    #hamburger-menu,
+    nav {
+        display: none;
+    }
+
+    #hamburger-menu:checked~nav {
+        display: block;
+        text-align: center;
+        grid-row: 3;
+        grid-column: -3/-1;
+    }
+}
+
+
+/* Loader */
+
+.loader {
+    border: 20px solid #f3f3f3;
+    border-top: 20px solid #054465;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

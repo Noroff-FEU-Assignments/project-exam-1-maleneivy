@@ -1,8 +1,8 @@
-const recipes = document.querySelector(".recipes");
+const blog = document.querySelector(".blog");
 
 const baseUrl = "https://healthyliving.maleneivy.com/wp-json/wp/v2/posts";
 
-async function fetchRecipes() {
+async function fetchBlogs() {
 
     try {
         const response = await fetch(baseUrl);
@@ -10,7 +10,7 @@ async function fetchRecipes() {
 
         console.log(blogPosts);
 
-        recipes.innerHTML = "";
+        blog.innerHTML = "";
 
         createHtml(blogPosts);
 
@@ -18,7 +18,7 @@ async function fetchRecipes() {
     catch (error) { }
 }
 
-fetchRecipes();
+fetchBlogs();
 
 function createHtml(blogPosts) {
 
@@ -31,7 +31,7 @@ function createHtml(blogPosts) {
         console.log(content);
         // console.log(content.rendered);
 
-        recipes.innerHTML += `
+        blog.innerHTML += `
                            <section class = "post-name"><h2>Blog Post</h2></header>
                            <section class = "wp-block-wpzoom-recipe-card-block-recipe-card">  <div class = "posted-it"><h3>Posted</h3> ${date}</div>${content.rendered} 
                            </section>`

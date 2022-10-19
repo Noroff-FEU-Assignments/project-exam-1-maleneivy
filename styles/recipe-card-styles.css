@@ -1,5 +1,3 @@
-/* Mobile view */
-
 /* Recipe Card Styles */
 
 .wpzoom-recipe-card-print-link,
@@ -91,26 +89,4 @@
     margin: 110px -160px;
     font-family: grandma, sans-serif;
     font-size: 12px;
-}
-
-/* Loader */
-
-.loader {
-    border: 20px solid #f3f3f3;
-    border-top: 20px solid #054465;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-left: 50%;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }

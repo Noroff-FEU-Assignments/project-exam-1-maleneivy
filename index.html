@@ -6,19 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="styles/recipe-card-styles.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://use.typekit.net/rym2spy.css">
 </head>
 
 <body>
-    <h1>Recipes</h1>
+    <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search here">
+            <a href="#">
+                <img src="/logo-icons/search-icon.svg" class="search-icon">
+            </a>
+        </div>
+        <a href="index.html">
+            <img src="logo-icons/healthy-living-logo.svg" alt="Healthy Living Logo" class="logo">
+        </a>
 
-    <section class="recipes">
-        <div class="loader"></div>
-    </section>
+        <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav>
+            <section class="header-menus">
+                <ul>
+                    <li><a href="index.html" class="current-nav">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="didyouknow.html">Did You Know?</a></li>
+                </ul>
+            </section>
 
+        </nav>
 
-    <script src="script/recipes.js"></script>
+    </header>
+    <main>
+
+    </main>
 </body>
 
 </html>
