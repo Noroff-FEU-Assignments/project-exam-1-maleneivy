@@ -250,11 +250,13 @@ main img {
 
     .welcome-text {
         padding-top: 30px;
-        width: 600px;
+        max-width: 600px;
         padding-left: 0;
     }
 
-
+    .welcome-image img {
+        max-width: 100%;
+    }
 }
 
 /*media mobile styles*/
@@ -359,7 +361,7 @@ main img {
     }
 
     .welcome-text {
-        max-width: 100%;
+        max-width: 600px;
         padding-left: 0;
     }
 
