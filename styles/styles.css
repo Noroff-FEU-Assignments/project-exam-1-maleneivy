@@ -29,7 +29,7 @@ header li {
     padding-right: 40px;
     font-family: halcom, sans-serif;
     font-size: 1.3em;
-    text-transform: capitalize;
+    font-variant: small-caps;
 }
 
 header a,
