@@ -100,6 +100,47 @@ header a:active {
     padding-left: 20px;
 }
 
+/* SVG and welcome image with text */
+
+#wave {
+    z-index: -1;
+    position: absolute;
+
+}
+
+.welcome-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 150px;
+
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    font-family: halcom, sans-serif;
+    padding-left: 100px;
+}
+
+.welcome-text h2 {
+    font-size: 2em;
+}
+
+.welcome-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.welcome-image img {
+    width: 600px;
+}
+
+main img {
+    border-style: solid;
+    border-width: 9px;
+    border-color: #B89E9E;
+}
+
 /*media tablet styles*/
 @media only screen and (min-width:927px) and (max-width:1366px) {
 
@@ -198,6 +239,21 @@ header a:active {
     }
 
 
+    /* SVG and welcome image with text */
+
+    .welcome-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .welcome-text {
+        padding-top: 30px;
+        width: 600px;
+        padding-left: 0;
+    }
+
 
 }
 
@@ -292,6 +348,27 @@ header a:active {
         padding-bottom: 20px;
         font-variant: small-caps;
         font-size: 1em;
+    }
+
+    .welcome-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 0.3fr);
+        justify-items: center;
+        padding: 60px;
+    }
+
+    .welcome-text {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .welcome-text h2 {
+        font-size: 1.4em;
+    }
+
+    .welcome-image img {
+        max-width: 100%;
     }
 }
 
