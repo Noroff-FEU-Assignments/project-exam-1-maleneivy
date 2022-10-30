@@ -1,5 +1,6 @@
 /*media desktop styles*/
 body {
+    height: 100vh;
     margin: 0 auto;
 }
 
@@ -96,7 +97,7 @@ header a:active {
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
     grid-row: 1;
     grid-column: 1/2;
     padding-top: 30px;
@@ -114,7 +115,7 @@ header a:active {
 .welcome-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 150px 150px 300px 150px;
+    padding: 150px 150px 220px 150px;
 
 }
 
@@ -151,17 +152,16 @@ header a:active {
 
 .section-banner-pink svg {
     max-width: 100%;
-
     margin-top: 20px;
 }
 
 .section-banner-h2 {
     font-family: grandma, sans-serif;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.4em;
     font-variant: small-caps;
     position: relative;
-    margin-top: -155px;
+    margin-top: -140px;
     padding-left: 600px;
 
 }

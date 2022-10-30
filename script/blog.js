@@ -35,9 +35,6 @@ function createHtml(blogPosts) {
                            <section class = "post-name"><h2>Blog Post</h2></header>
                            <section class = "wp-block-wpzoom-recipe-card-block-recipe-card">  <div class = "posted-it"><h3>Posted</h3> ${date}</div>${content.rendered} 
                            </section>`
-
-
-
     }
-
 }
+
