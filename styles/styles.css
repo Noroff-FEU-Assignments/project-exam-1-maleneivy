@@ -2,6 +2,7 @@
 body {
     height: 100vh;
     margin: 0 auto;
+
 }
 
 footer {
@@ -200,7 +201,7 @@ header a:active {
 }
 
 
-/* SVG and welcome image with text */
+/* SVG, welcome-section, about-section with text */
 
 #wave {
     z-index: -1;
@@ -208,25 +209,35 @@ header a:active {
 
 }
 
-.welcome-box {
+.welcome-box,
+.about-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 150px 150px 220px 150px;
 
 }
 
-.welcome-text {
+.about-box {
+    padding-bottom: 30px;
+}
+
+.welcome-text,
+.about-text {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     font-family: halcom, sans-serif;
     padding-left: 100px;
 }
 
-.welcome-text h2 {
+.welcome-text h2,
+.about-text h2 {
     font-size: 2em;
 }
 
-.welcome-text p {
+.welcome-text p,
+.about-text p,
+.about-section-text {
     font-size: 1.4em;
     line-height: 1.5;
     font-weight: 400;
@@ -237,6 +248,15 @@ header a:active {
     border-width: 9px;
     border-color: #B89E9E;
     width: 600px;
+}
+
+.about-text {
+    padding: 40px;
+}
+
+.about-section-text {
+    font-family: halcom, sans-serif;
+    padding: 0 150px 30px 150px;
 }
 
 
@@ -405,7 +425,8 @@ header a:active {
 
     /* SVG and welcome image with text */
 
-    .welcome-box {
+    .welcome-box,
+    .about-box {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -413,13 +434,23 @@ header a:active {
         padding-bottom: 10px;
     }
 
-    .welcome-text {
+    .about-box {
+        grid-template-rows: repeat(2, 0.5fr);
+    }
+
+    .welcome-text,
+    .about-text {
         padding-top: 30px;
         max-width: 600px;
         padding-left: 0;
     }
 
-    .welcome-text p {
+    .about-text {
+        padding-bottom: 10px;
+    }
+
+    .welcome-text p,
+    .about-text p {
         font-size: 1.4em;
     }
 
@@ -429,7 +460,8 @@ header a:active {
 
     /* Banner */
 
-    .section-banner-h2 {
+    .section-banner-h2,
+    .section-banner-h1 {
         padding-left: 400px;
 
     }
@@ -528,20 +560,28 @@ header a:active {
         font-size: 1em;
     }
 
-    .welcome-box {
+    .welcome-box,
+    .about-box {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 0.3fr);
         justify-items: center;
-        padding: 60px;
+        padding: 60px 60px 0 60px;
     }
 
-    .welcome-text {
+    .welcome-text,
+    .about-text {
         max-width: 600px;
         padding-left: 0;
     }
 
-    .welcome-text h2 {
+    .about-section-text {
+        max-width: 600px;
+        padding: 0 60px 0 60px;
+    }
+
+    .welcome-text h2,
+    .about-text h2 {
         font-size: 1.4em;
     }
 
@@ -551,11 +591,11 @@ header a:active {
 
     /* Banner */
 
-    .section-banner-h2 {
+    .section-banner-h2,
+    .section-banner-h1 {
         padding-left: 150px;
         font-size: 1.3em;
         margin-top: -130px;
-
     }
 
     /* footer */
@@ -601,3 +641,4 @@ header a:active {
             transform: rotate(360deg);
         }
     }
+}
