@@ -17,10 +17,14 @@ footer {
     justify-content: space-evenly;
 }
 
+.footer-li {
+    display: flex;
+}
+
 .footer-nav li {
     list-style: none;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 .footer-nav li a {
@@ -569,6 +573,11 @@ header a:active {
 
     .social-logo {
         width: 30px;
+    }
+
+    .footer-li {
+        flex-direction: column;
+        text-align: center;
     }
 
     /* Loader */
