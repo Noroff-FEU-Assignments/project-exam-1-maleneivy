@@ -1,0 +1,15 @@
+.input-error {
+    display: none;
+    margin-bottom: 20px;
+    font-family: halcom, sans-serif;
+    background-color: #cc5e5e98;
+    padding: 10px;
+}
+
+.success-message {
+    display: none;
+    background-color: #D3F5D5;
+    font-family: halcom, sans-serif;
+    padding: 10px;
+    margin-top: 10px;
+}

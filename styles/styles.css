@@ -4,6 +4,27 @@ body {
     margin: 0 auto;
 }
 
+.cta-button {
+    background-color: #B89E9E;
+    width: fit-content;
+    padding: 8px 35px;
+    font-family: halcom, sans-serif;
+    font-variant: small-caps;
+    color: #2E362F;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.cta-button:hover {
+    color: #fff;
+}
+
+.cta-button:active {
+    color: #2E362F;
+    background-color: #fff;
+}
+
 /* Header */
 
 header {
@@ -104,6 +125,28 @@ header a:active {
     padding-left: 20px;
 }
 
+.about-nav {
+    position: relative;
+}
+
+.dropdown-menu-nav {
+    font-family: halcom, sans-serif;
+    font-size: 1em;
+    font-variant: small-caps;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    padding: 20px;
+    width: 125%;
+    display: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.about-nav:hover .dropdown-menu-nav {
+    display: block;
+}
+
+
 /* SVG and welcome image with text */
 
 #wave {
@@ -155,7 +198,8 @@ header a:active {
     margin-top: 20px;
 }
 
-.section-banner-h2 {
+.section-banner-h2,
+.section-banner-h1 {
     font-family: grandma, sans-serif;
     font-weight: 700;
     font-size: 1.4em;
@@ -163,7 +207,47 @@ header a:active {
     position: relative;
     margin-top: -140px;
     padding-left: 600px;
+}
 
+/* Contact Form */
+
+.contact-form-container {
+    margin: 100px auto;
+    max-width: 100%;
+    width: 800px;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contact-form input,
+.contact-form label,
+.contact-form textarea {
+    font-size: 1.2em;
+    font-family: halcom, sans-serif;
+    color: #2E362F;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: solid 0.5px #2e362f3f;
+}
+
+.contact-form .cta-button {
+    align-self: flex-end;
+    padding: 8px 35px;
+    font-family: halcom, sans-serif;
+    font-variant: small-caps;
+    color: #2E362F;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 2px;
 }
 
 /*media tablet styles*/

@@ -26,7 +26,14 @@
                     <li><a href="index.html" class="current-nav">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="about-nav">
+                        <a href="">About</a>
+                        <div class="dropdown-menu-nav">
+                            <a href="about.html">about me</a>
+                            <a href="contact.html">contact me</a>
+                        </div>
+                    </li>
+
                     <li><a href="didyouknow.html">Did You Know?</a></li>
                 </ul>
                 <div class="search-box">
@@ -93,8 +100,8 @@
                         <div class="loader"></div>
                     </div>
                     <div class="btn-slider-area">
-                        <button type="button" class="prev-btn">Prev</button>
-                        <button type="button" class="next-btn">Next</button>
+                        <button type="button" class="prev-btn" aria-hidden="true">Prev</button>
+                        <button type="button" class="next-btn" aria-hidden="true">Next</button>
                     </div>
                 </div>
             </div>

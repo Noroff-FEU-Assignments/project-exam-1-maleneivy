@@ -31,10 +31,7 @@ body {
 .btn-slider-area {
     position: absolute;
     top: 50%;
-}
 
-.next-btn {
-    left: 50%;
 }
 
 .recipe-card-title {

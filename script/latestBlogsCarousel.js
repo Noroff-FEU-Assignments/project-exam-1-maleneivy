@@ -1,16 +1,18 @@
-const latestBlogs = document.querySelector(".slider-main");
+const sliderMain = document.querySelector(".slider-main");
+const nextBtn = document.querySelector(".next-btn");
+const prevBtn = document.querySelector(".prev-btn");
 
-const fourLatestBlogs = "https://healthyliving.maleneivy.com/wp-json/wp/v2/posts?per_page=12";
+const twelveLatestBlogs = "https://healthyliving.maleneivy.com/wp-json/wp/v2/posts?per_page=12";
 
 async function fetchBlogs() {
 
     try {
-        const response = await fetch(fourLatestBlogs);
+        const response = await fetch(twelveLatestBlogs);
         const blogPosts = await response.json();
 
         console.log(blogPosts);
 
-        latestBlogs.innerHTML = "";
+        sliderMain.innerHTML = "";
 
         getLatestBlogPosts(blogPosts);
 
@@ -28,10 +30,9 @@ function getLatestBlogPosts(blogPosts) {
 
         console.log(content)
 
-        latestBlogs.innerHTML += `
+        sliderMain.innerHTML += `
         <div class="latest-blog-post">${content.rendered}<div class="blog-card-date">${date}</div></div>`
     }
-
-
-
 }
+
+
