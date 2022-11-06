@@ -1,8 +1,10 @@
 const sliderMain = document.querySelector(".slider-main");
-const nextBtn = document.querySelector(".next-btn");
-const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector("#next-btn");
+const prevBtn = document.querySelector("#prev-btn");
+const sliderWrap = document.querySelector(".slider-wrap")
 
 const twelveLatestBlogs = "https://healthyliving.maleneivy.com/wp-json/wp/v2/posts?per_page=12";
+
 
 async function fetchBlogs() {
 
@@ -31,8 +33,23 @@ function getLatestBlogPosts(blogPosts) {
         console.log(content)
 
         sliderMain.innerHTML += `
-        <div class="latest-blog-post">${content.rendered}<div class="blog-card-date">${date}</div></div>`
+        <li class="blog-post-wrapper">
+            <div class="latest-blog-post">
+                ${content.rendered}
+                <div class="blog-card-date">${date}</div>
+            </div>
+        </li>`
     }
-}
 
+    const blogCards = document.querySelector(".blog-post-wrapper");
+    const slideWidth = blogCards.clientWidth;
+
+    nextBtn.addEventListener("click", () => {
+        sliderMain.scrollLeft += slideWidth;
+    });
+
+    prevBtn.addEventListener("click", () => {
+        sliderMain.scrollLeft -= slideWidth;
+    });
+}
 

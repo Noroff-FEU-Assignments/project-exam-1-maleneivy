@@ -26,15 +26,10 @@
                     <li><a href="index.html" class="current-nav">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
-                    <li class="about-nav">
-                        <a href="">About</a>
-                        <div class="dropdown-menu-nav">
-                            <a href="about.html">about me</a>
-                            <a href="contact.html">contact me</a>
-                        </div>
+                    <li>
+                        <a href="about.html">About</a>
                     </li>
-
-                    <li><a href="didyouknow.html">Did You Know?</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="search-box">
                     <form class="search-input">
@@ -62,16 +57,19 @@
             </svg>
         </section>
         <section>
-            <div class="welcome-box">
-                <div class="welcome-image">
+            <div class="about-box">
+                <div class="welcome-image animal-welfare-img">
                     <img src="optimized-img/pexels-nathan-cowley-1153370.jpg">
                 </div>
-                <div class="welcome-text">
+                <div class="about-text">
                     <h2>Hi</h2>
                     <p>I am Sarah Parker and I am making this blog hoping to help and inspire you to choose with your
                         heart,
-                        eat more healthy and be the best version of yourself. </p>
+                        eat more healthy and be the best version of yourself.
+                    </p>
+                    <p><a href="contact.html" class="cta-button">Contact me</a></p>
                 </div>
+
             </div>
         </section>
 
@@ -92,20 +90,16 @@
                 <h2>my latest blogposts</h2>
             </div>
         </section>
+        <div class="slider-wrap">
 
-        <section class="latest-blog-posts-container">
-            <div class="container-carousel-slider">
-                <div class="slider-wrap">
-                    <div class="slider-main">
-                        <div class="loader"></div>
-                    </div>
-                    <div class="btn-slider-area">
-                        <button type="button" class="prev-btn" aria-hidden="true">Prev</button>
-                        <button type="button" class="next-btn" aria-hidden="true">Next</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <button class="btn-slide-icons" id="prev-btn">&#8249;</button>
+
+            <button class="btn-slide-icons" id="next-btn">&#8250;</button>
+
+            <ul class="slider-main">
+                <div class="loader"></div>
+            </ul>
+        </div>
 
     </main>
     <footer>
@@ -116,6 +110,7 @@
                     <li><a href="about.html">About me</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
+
                 <section class="social-media-icons">
 
                     <a href="https://facebook.com/"><img src="logo-icons/f_logo_RGB-White_144.png"
@@ -131,6 +126,8 @@
 
 
             <p class="all-rights-p">@2022 healthy living all rights reserved</p>
+
+
 
         </section>
     </footer>

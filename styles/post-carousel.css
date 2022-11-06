@@ -2,37 +2,83 @@ body {
     height: 100vh;
 }
 
+.btn-slide-icons {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: #fff;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: ease-out 100ms;
+    z-index: 1;
+}
+
+#prev-btn {
+    left: 19px;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+#next-btn {
+    right: 27px;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
 .slider-wrap {
     position: relative;
     overflow: hidden;
     height: 440px;
-    width: 1380px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .slider-main {
-    position: absolute;
     margin-top: 60px;
-    width: 287%;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+    list-style: none;
+}
+
+.blog-post-wrapper {
+    padding: 20px;
+    width: 30%;
+    max-width: 300px;
+    max-height: 400px;
+    display: inline-block;
 }
 
 .latest-blog-post {
-    width: 100%;
-    max-width: 300px;
-    max-height: 400px;
+    height: 100%;
     background-color: #D3F5D5;
-    position: relative;
-    display: inline-block;
-    margin: 20px;
+
+
+    /* margin: 20px; */
     padding-bottom: 20px;
     /* margin: 0 auto; */
 }
 
-.btn-slider-area {
-    position: absolute;
-    top: 50%;
-
+.wpzoom-custom-recipe-card-post {
+    width: 300px;
 }
+
+
+.btn-slide-icons:hover,
+.btn-slide-icons:focus {
+    opacity: 1;
+}
+
+
 
 .recipe-card-title {
     font-size: 1.3em;
@@ -85,13 +131,3 @@ body {
 .recipe-card-heading {
     text-align: center;
 }
-
-
-
-/*
-    .latest-blog-posts-container {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    width: 100%;
-    }
-*/
