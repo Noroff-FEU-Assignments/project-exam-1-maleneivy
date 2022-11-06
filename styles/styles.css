@@ -76,6 +76,12 @@ footer {
     background-color: #fff;
 }
 
+.go-to-cta {
+    float: right;
+    margin-top: 20px;
+    margin-right: 5%
+}
+
 /* Header */
 
 header {

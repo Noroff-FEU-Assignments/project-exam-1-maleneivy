@@ -8,35 +8,34 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
-    height: 4rem;
+    height: 6rem;
     background-color: #fff;
     border: none;
-    width: 2rem;
-    font-size: 3rem;
-    padding: 0;
+    width: 5rem;
+    font-size: 5rem;
     cursor: pointer;
     opacity: 0.5;
-    transition: ease-out 100ms;
+    transition: ease-out 50ms;
     z-index: 1;
+    border-radius: 4rem;
+    justify-content: center;
 }
 
 #prev-btn {
-    left: 19px;
-    padding-left: 0.25rem;
-    border-radius: 0 2rem 2rem 0;
+    left: 43px;
+
 }
 
 #next-btn {
     right: 27px;
-    padding-left: 0.75rem;
-    border-radius: 2rem 0 0 2rem;
+
 }
 
 .slider-wrap {
     position: relative;
     overflow: hidden;
     height: 440px;
-    width: 100%;
+    width: 96%;
     margin: 0 auto;
 }
 
@@ -61,15 +60,11 @@ body {
 .latest-blog-post {
     height: 100%;
     background-color: #D3F5D5;
-
-
-    /* margin: 20px; */
     padding-bottom: 20px;
-    /* margin: 0 auto; */
 }
 
 .wpzoom-custom-recipe-card-post {
-    width: 300px;
+    width: 260px;
 }
 
 
