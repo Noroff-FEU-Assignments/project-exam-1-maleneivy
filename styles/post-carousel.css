@@ -74,8 +74,6 @@ body {
     opacity: 1;
 }
 
-
-
 .recipe-card-title {
     font-size: 1.3em;
     font-family: grandma, sans-serif;
@@ -115,7 +113,7 @@ body {
 
 
 .latest-blog-post img {
-    width: 100%;
+    width: 280px;
     height: 200px;
     object-fit: cover;
 }
@@ -165,6 +163,11 @@ body {
 
     .blog-post-wrapper {
         width: 40%;
+    }
+
+
+    .latest-blog-post img {
+        width: 300px;
     }
 
     /*media mobile styles*/
