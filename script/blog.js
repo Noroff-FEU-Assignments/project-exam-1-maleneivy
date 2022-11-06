@@ -28,13 +28,10 @@ function createHtml(blogPosts) {
         const content = blogPosts[i].content;
         const date = blogPosts[i].date;
 
-        console.log(content);
-        // console.log(content.rendered);
-
         blog.innerHTML += `
                            <section class = "post-name"><h2>Blog Post</h2></header>
-                           <section class = "wp-block-wpzoom-recipe-card-block-recipe-card">  <div class = "posted-it"><h3>Posted</h3> ${date}</div>${content.rendered} 
-                           </section>`
+                           <a href="specificBlog.html?id=${blogPosts[i].id}" class = "wp-block-wpzoom-recipe-card-block-recipe-card">  <div class = "posted-it"><h3>Posted</h3> ${date}</div>${content.rendered} 
+                           </a>`
     }
 }
 
