@@ -1,7 +1,7 @@
 const sliderMain = document.querySelector(".slider-main");
 const nextBtn = document.querySelector("#next-btn");
 const prevBtn = document.querySelector("#prev-btn");
-const sliderWrap = document.querySelector(".slider-wrap")
+const sliderWrap = document.querySelector(".slider-wrap");
 
 
 const twelveLatestBlogs = "https://healthyliving.maleneivy.com/wp-json/wp/v2/posts?per_page=12";
@@ -34,12 +34,15 @@ function getLatestBlogPosts(blogPosts) {
         console.log(content)
 
         sliderMain.innerHTML += `
+        
         <li class="blog-post-wrapper">
-            <div class="latest-blog-post">
+        <div class="latest-blog-post">
+        <a href="specificBlog.html?id=${blogPosts[i].id}">
                 ${content.rendered}
-                <div class="blog-card-date">${date}</div>
-            </div>
-        </li>`
+                <div class="blog-card-date">${date}</div></a>
+        </li>
+   
+        `
     }
 
     const blogCards = document.querySelector(".blog-post-wrapper");
