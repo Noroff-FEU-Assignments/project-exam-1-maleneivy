@@ -3,6 +3,7 @@ const nextBtn = document.querySelector("#next-btn");
 const prevBtn = document.querySelector("#prev-btn");
 const sliderWrap = document.querySelector(".slider-wrap")
 
+
 const twelveLatestBlogs = "https://healthyliving.maleneivy.com/wp-json/wp/v2/posts?per_page=12";
 
 
