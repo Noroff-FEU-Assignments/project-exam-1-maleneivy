@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .post-name {
@@ -12,6 +13,14 @@
     max-height: 400px;
     padding: 0;
     margin: 20px 20px;
+}
+
+.blog .post-name {
+    display: none;
+}
+
+.blog .post-name:nth-child(-n+9) {
+    display: block;
 }
 
 .recipe-card-image img {
@@ -92,6 +101,11 @@
 
 .loader-blogpage {
     margin: 0 auto;
+}
+
+.load-btn-container {
+    display: flex;
+    justify-content: center;
 }
 
 /*media mobile styles*/

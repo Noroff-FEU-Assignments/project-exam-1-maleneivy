@@ -8,7 +8,7 @@ async function fetchBlogs() {
         const response = await fetch(baseUrl);
         const blogPosts = await response.json();
 
-        console.log(blogPosts);
+        //  console.log(blogPosts);
 
         blog.innerHTML = "";
 
@@ -32,8 +32,24 @@ function createHtml(blogPosts) {
                            <section class = "post-name">
                            <a href="specificBlog.html?id=${blogPosts[i].id}" class = "wp-block-wpzoom-recipe-card-block-recipe-card">  <div class = "posted-it"><h3>Posted</h3> ${date}</div>${content.rendered} 
                            </a>
-                           <div class="blog-card-date">${date}</div></a>  </section>`
+                           <div class="blog-card-date">${date}</div></a>  </section>
+                           `
+    }
 
+    let loadMoreCta = document.querySelector(".load-btn-container");
+    let visibleBlogPostCount = 9;
+
+    loadMoreCta.onclick = () => {
+        let blogPostCards = [...document.querySelectorAll(`.blog .post-name`)];
+        for (var x = visibleBlogPostCount; x < visibleBlogPostCount + 9; x++) {
+            console.log(x);
+            console.log(blogPostCards[x]);
+            blogPostCards[x].style.display = "block";
+        }
+        visibleBlogPostCount += 9;
+
+        if (visibleBlogPostCount >= blogPostCards.length) {
+            loadMoreCta.style.display = "none";
+        }
     }
 }
-
