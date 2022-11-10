@@ -622,26 +622,26 @@ header a:active {
         flex-direction: column;
         text-align: center;
     }
+}
 
-    /* Loader */
+/* Loader */
 
-    .loader {
-        border: 20px solid #f3f3f3;
-        border-top: 20px solid #58845e;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        margin-left: 50%;
-        animation: spin 2s linear infinite;
+.loader {
+    border: 20px solid #f3f3f3;
+    border-top: 20px solid #58845e;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
     }
 
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
+    100% {
+        transform: rotate(360deg);
     }
 }

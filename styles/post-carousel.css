@@ -71,8 +71,12 @@ body {
 
 .latest-blog-post a:hover {
     font-size: 1.1rem;
-    background-color: #fff;
 }
+
+.latest-blog-post a:active {
+    color: #fff;
+}
+
 
 .wpzoom-custom-recipe-card-post {
     width: 260px;
