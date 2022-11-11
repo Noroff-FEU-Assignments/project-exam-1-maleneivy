@@ -1,4 +1,6 @@
 const specificBlog = document.querySelector(".specific-blog");
+const sectionBanner = document.querySelector(".section-banner-h1");
+const head = document.querySelector("head");
 
 const queryString = document.location.search;
 
@@ -28,8 +30,13 @@ fetchBlog();
 
 
 function createHtml(json) {
+    head.innerHTML += `<title>Blog Post for the recipe ${json.title.rendered}</title>
+    `
+
     specificBlog.innerHTML += `
                                 <section class = "wp-block-wpzoom-recipe-card-block-recipe-card">  
                                      <div class = "posted-it"><h3>Posted</h3> ${json.date}</div>${json.content.rendered}
                                   </section>`
+
+    sectionBanner.innerHTML += `<h1 class="specific-blog-h1">${json.title.rendered}</h1>`
 }

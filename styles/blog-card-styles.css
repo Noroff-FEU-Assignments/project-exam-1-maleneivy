@@ -19,10 +19,6 @@
     display: none;
 }
 
-.blog .post-name:nth-child(-n+9) {
-    display: block;
-}
-
 .recipe-card-image img {
     width: 100%;
     max-width: 300px;

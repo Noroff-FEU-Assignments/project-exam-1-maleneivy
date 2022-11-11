@@ -37,17 +37,29 @@ function createHtml(blogPosts) {
     }
 
     let loadMoreCta = document.querySelector(".load-btn-container");
-    let visibleBlogPostCount = 9;
+    let startIndex = 0;
+    let count = 9;
+
+    revealPosts(startIndex, count);
+    startIndex += count;
 
     loadMoreCta.onclick = () => {
-        let blogPostCards = [...document.querySelectorAll(`.blog .post-name`)];
-        for (var x = visibleBlogPostCount; x < visibleBlogPostCount + 9; x++) {
-            blogPostCards[x].style.display = "block";
-        }
-        visibleBlogPostCount += 9;
+        revealPosts(startIndex, count);
+        startIndex += count;
+    }
+}
 
-        if (visibleBlogPostCount >= blogPostCards.length) {
+function revealPosts(startIndex, count) {
+    let blogPostCards = [...document.querySelectorAll(`.blog .post-name`)];
+
+    for (var x = startIndex; x < startIndex + count; x++) {
+        let blogPostCard = blogPostCards[x];
+
+        if (blogPostCard === undefined) {
+            let loadMoreCta = document.querySelector(".load-btn-container");
             loadMoreCta.style.display = "none";
+        } else {
+            blogPostCards[x].style.display = "block";
         }
     }
 }
