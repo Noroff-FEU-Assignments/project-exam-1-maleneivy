@@ -103,3 +103,61 @@
 .ingredient-item {
     list-style: none;
 }
+
+/*media tablet styles*/
+@media only screen and (min-width:700px) and (max-width:1175px) {
+    .recipe-card-directions {
+        grid-row: 6;
+        grid-column: 1/7;
+    }
+
+    .recipe-card-ingredients {
+        grid-column: 1/7;
+    }
+
+}
+
+/*media mobile styles*/
+@media only screen and (max-width:701px) {
+
+    #wpzoom-recipe-card {
+        grid-template-columns: repeat(4, 0.2fr);
+    }
+
+    .recipe-card-directions {
+        grid-row: 6;
+        grid-column: 1/4;
+    }
+
+    .recipe-card-ingredients {
+        grid-column: 1/4;
+    }
+
+    .recipe-card-image {
+        grid-column: 1/4;
+    }
+
+    .recipe-card-heading,
+    .recipe-card-course,
+    .recipe-card-details {
+        grid-column: 2/3;
+    }
+
+}
+
+/*media mobile styles*/
+@media only screen and (max-width:600px) {
+
+    #wpzoom-recipe-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipe-card-image img,
+    .recipe-card-image {
+        width: 100%;
+        max-width: 300px;
+
+    }
+
+}
