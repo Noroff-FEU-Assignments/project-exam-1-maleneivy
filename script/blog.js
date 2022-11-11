@@ -42,8 +42,6 @@ function createHtml(blogPosts) {
     loadMoreCta.onclick = () => {
         let blogPostCards = [...document.querySelectorAll(`.blog .post-name`)];
         for (var x = visibleBlogPostCount; x < visibleBlogPostCount + 9; x++) {
-            console.log(x);
-            console.log(blogPostCards[x]);
             blogPostCards[x].style.display = "block";
         }
         visibleBlogPostCount += 9;

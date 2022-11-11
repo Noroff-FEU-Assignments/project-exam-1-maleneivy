@@ -30,5 +30,6 @@ fetchBlog();
 function createHtml(json) {
     specificBlog.innerHTML += `
                                 <section class = "wp-block-wpzoom-recipe-card-block-recipe-card">  
-                                 <div class = "posted-it"><h3>Posted</h3> ${json.date}</div>${json.content.rendered} </section>`
+                                     <div class = "posted-it"><h3>Posted</h3> ${json.date}</div>${json.content.rendered}
+                                  </section>`
 }
