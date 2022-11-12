@@ -1,5 +1,6 @@
 const blog = document.querySelector(".blog");
 
+
 const baseUrl = "https://healthyliving.maleneivy.com/wp-json/wp/v2/posts?per_page=100";
 
 async function fetchBlogs() {
@@ -7,8 +8,6 @@ async function fetchBlogs() {
     try {
         const response = await fetch(baseUrl);
         const blogPosts = await response.json();
-
-        //  console.log(blogPosts);
 
         blog.innerHTML = "";
 
@@ -20,9 +19,12 @@ async function fetchBlogs() {
 
 fetchBlogs();
 
-function createHtml(blogPosts) {
+setBreadcrumbs([
+    { path: "/", title: "Home" },
+    { path: "/blog.html", title: "Blog" },
+])
 
-    //console.log(blogPosts[0].content);
+function createHtml(blogPosts) {
 
     for (let i = 0; i < blogPosts.length; i++) {
         const content = blogPosts[i].content;
