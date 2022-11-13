@@ -19,6 +19,7 @@ async function fetchBlog() {
         const json = await response.json();
 
         createHtml(json);
+        console.log(json);
 
     }
     catch (error) { }
@@ -38,7 +39,34 @@ function createHtml(json) {
     specificBlog.innerHTML += `
                                 <section class = "wp-block-wpzoom-recipe-card-block-recipe-card">  
                                      <div class = "posted-it"><h3>Posted</h3> ${json.date}</div>${json.content.rendered}
-                                  </section>`
+                                  </section>`;
 
-    sectionBanner.innerHTML += `<h1 class="specific-blog-h1">${json.title.rendered}</h1>`
+    sectionBanner.innerHTML += `<h1 class="specific-blog-h1">${json.title.rendered}</h1>`;
+
+    const body = document.querySelector("body");
+    const img = document.querySelector(".wpzoom-recipe-card-image");
+    body.innerHTML += `
+        <div class="modal-background">
+
+            <span class="close-modal">&times;</span>
+
+            <img class="modal-image" id=${img.id} src=${img.src} alt=${img.alt};>
+
+            <div id="caption">${img.alt}</div>
+
+        </div>
+    `;
+
+    const modalBackground = document.querySelector(".modal-background");
+
+    const blogImage = document.querySelector("figure");
+    blogImage.onclick = function () {
+        modalBackground.style.display = "block";
+    }
+
+    const closeModalBtn = document.querySelector(".close-modal");
+
+    closeModalBtn.onclick = function () {
+        modalBackground.style.display = "none";
+    }
 }
