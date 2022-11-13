@@ -126,11 +126,11 @@
 
     .recipe-card-directions {
         grid-row: 6;
-        grid-column: 1/4;
+        grid-column: 1/7;
     }
 
     .recipe-card-ingredients {
-        grid-column: 1/4;
+        grid-column: 1/7;
     }
 
     .recipe-card-image {
@@ -156,8 +156,75 @@
     .recipe-card-image img,
     .recipe-card-image {
         width: 100%;
-        max-width: 300px;
 
+    }
+
+    .recipe-card-title {
+        font-size: 1.3rem;
+    }
+
+    .recipe-card-course,
+    .recipe-card-details,
+    .recipe-card-summary {
+        font-size: 0.8rem;
+    }
+
+    .specific-blog {
+        margin: 40px 20px;
+    }
+
+    .recipe-card-image img,
+    .recipe-card-image {
+        width: 95%;
+    }
+
+    .recipe-card-ingredients,
+    .recipe-card-directions {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .ingredients-title,
+    .directions-title {
+        font-size: 1.1em;
+    }
+
+    .ingredients-list,
+    .directions-list {
+        padding-inline-start: 5px;
+        font-size: 0.8em;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    .footer-nav ul {
+        padding-inline-start: 0;
+    }
+
+    #hamburger-menu:checked~nav {
+        font-size: 1.2em;
+    }
+
+    .footer-nav li a {
+        font-size: 1em;
+    }
+
+    .all-rights-p {
+        padding: 0;
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width:400px) {
+
+    .recipe-card-image img {
+        height: 150px;
+    }
+
+    .logo {
+        width: 80px;
     }
 
 }

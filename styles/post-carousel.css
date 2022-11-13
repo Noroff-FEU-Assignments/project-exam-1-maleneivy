@@ -211,6 +211,11 @@ body {
             min-width: 270px;
         }
 
+        .latest-blog-post img {
+            width: 270px;
+            height: 150px;
+        }
+
         .recipe-card-title {
             font-size: 0.7em;
         }
