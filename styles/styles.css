@@ -13,6 +13,7 @@ footer {
 .footer-nav ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer-li {
@@ -41,6 +42,7 @@ footer {
 .social-logo {
     width: 50px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .social-logo:hover {
@@ -52,6 +54,10 @@ footer {
     text-align: center;
     padding: 0 0 20px 70px;
     font-variant: small-caps;
+}
+
+.social-media-icons {
+    padding-right: 50px;
 }
 
 
@@ -698,6 +704,10 @@ header a:active {
     .footer-li {
         flex-direction: column;
         text-align: center;
+    }
+
+    .social-media-icons {
+        padding-right: 0;
     }
 }
 
