@@ -191,7 +191,8 @@ body {
     /*media mobile styles*/
     @media only screen and (max-width:800px) {
 
-        .slider-main {
+        .slider-main,
+        .dinner-posts-on-index-page {
             display: grid;
             padding: 0;
         }

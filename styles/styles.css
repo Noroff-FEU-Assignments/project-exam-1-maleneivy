@@ -33,7 +33,7 @@ footer {
     font-size: 1.3em;
 }
 
-/specificBlog.html .footer-nav li a:hover {
+.footer-nav li a:hover {
     color: #fff;
     text-decoration: underline;
 }
@@ -293,6 +293,44 @@ header a:active {
     margin-top: 200px;
 }
 
+/* Dessert section on INDEX.HTML */
+
+.latest-blog-post-dessert {
+    height: 100%;
+    background-color: #D3F5D5;
+    padding-bottom: 20px;
+    width: 700px;
+    margin: 100px auto;
+}
+
+.latest-blog-post-dessert img {
+    width: 700px;
+    object-fit: cover;
+    height: 400px;
+    aspect-ratio: 0;
+}
+
+.latest-blog-post-dessert figure {
+    margin: 0;
+}
+
+.latest-blog-post-dessert a {
+    text-decoration: none;
+    color: #2E362F;
+}
+
+.latest-blog-post-dessert .wpzoom-custom-recipe-card-post {
+    width: 700px;
+}
+
+.latest-blog-post-dessert a:hover {
+    font-size: 1.1rem;
+}
+
+.latest-blog-post-dessert a:active {
+    color: #fff;
+}
+
 /* Contact Form */
 
 .contact-form-container {
@@ -479,7 +517,10 @@ header a:active {
     .section-banner-h2,
     .section-banner-h1 {
         padding-left: 400px;
+    }
 
+    .section-banner-dinner {
+        margin-top: 70px;
     }
 }
 
@@ -615,6 +656,19 @@ header a:active {
         width: 600px;
     }
 
+    /* Dessert section on INDEX.HTML */
+
+    .latest-blog-post-dessert,
+    .latest-blog-post-dessert img,
+    .latest-blog-post-dessert .wpzoom-custom-recipe-card-post {
+        max-width: 400px;
+    }
+
+    .dinner-posts-on-index-page {
+        display: grid;
+        padding: 0;
+    }
+
     /* Banner */
 
     .section-banner-h2,
@@ -672,6 +726,34 @@ header a:active {
         padding-left: 50px;
         margin-top: -120px;
     }
+
+    .section-banner-dinner {
+        margin-top: 50px;
+    }
+
+    /* Dessert section on INDEX.HTML */
+
+    .latest-blog-post-dessert,
+    .latest-blog-post-dessert img,
+    .latest-blog-post-dessert .wpzoom-custom-recipe-card-post {
+
+        max-width: 250px;
+    }
+
+    .latest-blog-post-dessert img {
+        height: 150px;
+    }
+
+    .latest-blog-post-dessert {
+        margin: 50px auto;
+    }
+
+    /* Footer */
+
+    footer {
+        margin-top: 50px;
+    }
+
 
     /* Loader */
 
