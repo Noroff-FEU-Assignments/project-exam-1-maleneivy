@@ -13,8 +13,6 @@ async function fetchBlogs() {
         const response = await fetch(twelveLatestBlogs);
         const blogPosts = await response.json();
 
-        console.log(blogPosts);
-
         sliderMain.innerHTML = "";
 
         getLatestBlogPosts(blogPosts);
@@ -30,8 +28,6 @@ function getLatestBlogPosts(blogPosts) {
     for (let i = 0; i < blogPosts.length; i++) {
         const content = blogPosts[i].content;
         const date = blogPosts[i].date;
-
-        console.log(content)
 
         sliderMain.innerHTML += `
         

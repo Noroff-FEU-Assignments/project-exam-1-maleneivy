@@ -21,12 +21,14 @@ body {
     justify-content: center;
 }
 
-#prev-btn {
+#prev-btn,
+#prev-btn-dinner {
     left: 43px;
 
 }
 
-#next-btn {
+#next-btn,
+#next-btn-dinner {
     right: 27px;
 
 }
@@ -39,7 +41,8 @@ body {
     margin: 0 auto auto 0;
 }
 
-.slider-main {
+.slider-main,
+.dinner-posts-on-index-page {
     margin-top: 60px;
     width: 100%;
     display: flex;
@@ -163,7 +166,8 @@ body {
         position: static;
     }
 
-    .slider-main {
+    .slider-main,
+    .dinner-posts-on-index-page {
         overflow: hidden;
         flex-wrap: wrap;
         justify-content: center;
