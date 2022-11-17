@@ -38,8 +38,9 @@ function createHtml(json) {
 
     specificBlog.innerHTML += `
                                 <section class = "wp-block-wpzoom-recipe-card-block-recipe-card">  
-                                     <div class = "posted-it"><h3>Posted</h3> ${json.date}</div>${json.content.rendered}
-                                  </section>`;
+                                     ${json.content.rendered}
+                                  </section>
+                                  <div class="posted-it">${json.date}</div>`;
 
     sectionBanner.innerHTML += `<h1 class="specific-blog-h1">${json.title.rendered}</h1>`;
 

@@ -2,6 +2,7 @@
 body {
     height: 100vh;
     margin: 0 auto;
+    width: 100%;
 
 }
 
@@ -264,24 +265,40 @@ header a:active {
 }
 
 .about-text {
-    padding: 40px;
+    padding-top: 40px;
+    max-width: 1000px;
 }
 
 .about-text .cta-button {
     float: right;
 }
 
+#link-to-dyrevern {
+    color: #58845e;
+    padding: 10px;
+    float: right;
+}
+
+#link-to-dyrevern:hover {
+    color: #fff;
+    background-color: #58845e;
+    cursor: pointer;
+}
+
+.about-text #link-to-dyrevern {
+    text-align: end;
+}
 
 /* Banner */
 
 .section-banner-green svg {
-    max-width: 100%;
+    max-width: 90%;
     position: absolute;
 }
 
 .section-banner-pink svg {
-    max-width: 100%;
-    margin-top: 20px;
+    max-width: 90%;
+    margin-top: 8px;
 }
 
 .section-banner-h2,
@@ -293,48 +310,11 @@ header a:active {
     position: relative;
     margin-top: -140px;
     padding-left: 600px;
+    padding-top: 10px
 }
 
 .section-banner-dinner {
-    margin-top: 200px;
-}
-
-/* Dessert section on INDEX.HTML */
-
-.latest-blog-post-dessert {
-    height: 100%;
-    background-color: #D3F5D5;
-    padding-bottom: 20px;
-    width: 700px;
-    margin: 100px auto;
-}
-
-.latest-blog-post-dessert img {
-    width: 700px;
-    object-fit: cover;
-    height: 400px;
-    aspect-ratio: 0;
-}
-
-.latest-blog-post-dessert figure {
-    margin: 0;
-}
-
-.latest-blog-post-dessert a {
-    text-decoration: none;
-    color: #2E362F;
-}
-
-.latest-blog-post-dessert .wpzoom-custom-recipe-card-post {
-    width: 700px;
-}
-
-.latest-blog-post-dessert a:hover {
-    font-size: 1.1rem;
-}
-
-.latest-blog-post-dessert a:active {
-    color: #fff;
+    margin-top: 60px;
 }
 
 /* Contact Form */
@@ -466,7 +446,7 @@ header a:active {
         grid-row: 2;
         grid-column: -4/-1;
         font-family: halcom, sans-serif;
-        font-size: 1.8em;
+        font-size: 1.4em;
         padding-top: 50px;
     }
 
@@ -522,7 +502,9 @@ header a:active {
 
     .section-banner-h2,
     .section-banner-h1 {
-        padding-left: 400px;
+        padding-left: 300px;
+        font-size: 1.2em;
+        padding-top: 20px;
     }
 
     .section-banner-dinner {
@@ -619,7 +601,7 @@ header a:active {
         grid-row: 2;
         grid-column: -4/-1;
         font-family: halcom, sans-serif;
-        font-size: 1.8em;
+        font-size: 1.4em;
         padding-top: 40px;
     }
 
@@ -662,13 +644,6 @@ header a:active {
         width: 600px;
     }
 
-    /* Dessert section on INDEX.HTML */
-
-    .latest-blog-post-dessert,
-    .latest-blog-post-dessert img,
-    .latest-blog-post-dessert .wpzoom-custom-recipe-card-post {
-        max-width: 400px;
-    }
 
     .dinner-posts-on-index-page {
         display: grid;
@@ -679,15 +654,15 @@ header a:active {
 
     .section-banner-h2,
     .section-banner-h1 {
-        padding-left: 150px;
-        font-size: 1.3em;
-        margin-top: -130px;
+        padding-left: 90px;
+        font-size: 1.2em;
+        margin-top: -122px;
     }
 
     /* footer */
 
     .footer-nav ul {
-        padding-inline-start: 30px;
+        padding-inline-start: 0;
         margin-block-start: 2em;
         flex-direction: column;
         align-items: center;
@@ -709,13 +684,19 @@ header a:active {
     .social-media-icons {
         padding-right: 0;
     }
+
+    .all-rights-p {
+        padding: 0 0 15px 0;
+        font-size: 0.8em;
+
+    }
 }
 
 /*media mobile styles small*/
 @media only screen and (max-width:440px) {
 
     .welcome-image img {
-        max-width: 70%
+        max-width: 100%
     }
 
     .about-text h2 {
@@ -737,43 +718,34 @@ header a:active {
         margin-top: -120px;
     }
 
-
-
-    /* Dessert section on INDEX.HTML */
-
-    .latest-blog-post-dessert,
-    .latest-blog-post-dessert img,
-    .latest-blog-post-dessert .wpzoom-custom-recipe-card-post {
-
-        max-width: 250px;
-    }
-
-    .latest-blog-post-dessert img {
-        height: 150px;
-    }
-
-    .latest-blog-post-dessert {
-        margin: 50px auto;
-    }
-
     /* Footer */
 
     footer {
         margin-top: 50px;
     }
 
-
-    /* Loader */
-
-    .loader {
-        border: 20px solid #f3f3f3;
-        border-top: 20px solid #58845e;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        margin-left: 50%;
-        animation: spin 2s linear infinite;
+    .footer-nav ul {
+        padding-inline-start: 0;
     }
+
+    .all-rights-p {
+        padding: 0 0 20px 0;
+        ;
+        font-size: 0.6em;
+    }
+}
+
+
+/* Loader */
+
+.loader {
+    border: 20px solid #f3f3f3;
+    border-top: 20px solid #58845e;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    animation: spin 2s linear infinite;
 }
 
 @keyframes spin {

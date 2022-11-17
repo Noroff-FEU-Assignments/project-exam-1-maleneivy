@@ -88,11 +88,6 @@
     text-align: center;
 }
 
-
-.posted-it {
-    display: none;
-}
-
 .directions-list,
 .ingredient-item {
     font-weight: 400;
@@ -180,7 +175,7 @@
 
     .recipe-card-ingredients,
     .recipe-card-directions {
-        padding: 10px;
+        padding: 30px;
         margin: 10px 0;
     }
 
@@ -192,7 +187,7 @@
     .ingredients-list,
     .directions-list {
         padding-inline-start: 5px;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     footer {
@@ -212,7 +207,7 @@
     }
 
     .all-rights-p {
-        padding: 0;
+        padding: 0 0 20px 0;
         font-size: 0.7em;
     }
 }

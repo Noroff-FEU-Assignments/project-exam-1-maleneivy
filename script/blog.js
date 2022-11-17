@@ -32,7 +32,7 @@ function createHtml(blogPosts) {
 
         blog.innerHTML += `
                            <section class = "post-name">
-                           <a href="specificBlog.html?id=${blogPosts[i].id}" class = "wp-block-wpzoom-recipe-card-block-recipe-card">  <div class = "posted-it"><h3>Posted</h3> ${date}</div>${content.rendered} 
+                           <a href="specificBlog.html?id=${blogPosts[i].id}" class = "wp-block-wpzoom-recipe-card-block-recipe-card">  ${content.rendered} 
                            </a>
                            <div class="blog-card-date">${date}</div></a>  </section>
                            `

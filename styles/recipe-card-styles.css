@@ -85,18 +85,13 @@
 /* Posted note */
 
 .posted-it {
-    background-color: #D3F5D5;
-    position: absolute;
     z-index: +1;
-    grid-column: 3;
-    height: 90px;
-    width: 70px;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 9px;
+    width: 100%;
     border-color: #B89E9E;
-    margin: 0 -160px;
+    margin: 0 auto;
     font-family: grandma, sans-serif;
-    font-size: 12px;
+    font-size: 0.8em;
+    text-align: end;
+    padding-right: 100px;
+    ;
 }
