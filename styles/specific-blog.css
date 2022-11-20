@@ -99,6 +99,12 @@
     list-style: none;
 }
 
+.specific-blog-date {
+    font-family: halcom, sans-serif;
+    font-size: 1em;
+    text-align: end;
+}
+
 /*media tablet styles*/
 @media only screen and (min-width:700px) and (max-width:1175px) {
     .recipe-card-directions {
@@ -137,6 +143,11 @@
     .recipe-card-details {
         grid-column: 2/3;
     }
+
+    .specific-blog-date {
+        font-size: 0.7em;
+    }
+
 
 }
 

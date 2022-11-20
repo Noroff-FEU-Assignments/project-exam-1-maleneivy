@@ -34,13 +34,18 @@ function createHtml(json) {
         { path: "/specificBlog.html", title: json.title.rendered }
     ])
 
+    let dateString = json.date;
+    let newDate = new Date(dateString);
+
+    let dateOnBlog = `Posted: ${newDate.toDateString()}`
+
     head.innerHTML += `< title > Blog Post for the recipe ${json.title.rendered}</title > `
 
     specificBlog.innerHTML += `
                                 <section class = "wp-block-wpzoom-recipe-card-block-recipe-card">  
                                      ${json.content.rendered}
                                   </section>
-                                  <div class="posted-it">${json.date}</div>`;
+                                  <div class="specific-blog-date">${dateOnBlog}</div>`;
 
     sectionBanner.innerHTML += `<h1 class="specific-blog-h1">${json.title.rendered}</h1>`;
 

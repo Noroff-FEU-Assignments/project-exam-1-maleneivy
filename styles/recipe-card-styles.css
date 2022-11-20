@@ -82,16 +82,10 @@
 
 }
 
-/* Posted note */
-
-.posted-it {
-    z-index: +1;
-    width: 100%;
-    border-color: #B89E9E;
-    margin: 0 auto;
-    font-family: grandma, sans-serif;
-    font-size: 0.8em;
-    text-align: end;
-    padding-right: 100px;
-    ;
+.post-name {
+    height: 320px;
+    background-color: #D3F5D5;
+    padding-bottom: 20px;
+    width: 280px;
+    position: relative;
 }

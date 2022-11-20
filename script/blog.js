@@ -28,13 +28,17 @@ function createHtml(blogPosts) {
 
     for (let i = 0; i < blogPosts.length; i++) {
         const content = blogPosts[i].content;
-        const date = blogPosts[i].date;
+
+        let dateString = blogPosts[i].date;
+        let newDate = new Date(dateString);
+
+        let dateOnBlog = `Posted: ${newDate.toDateString()}`
 
         blog.innerHTML += `
                            <section class = "post-name">
                            <a href="specificBlog.html?id=${blogPosts[i].id}" class = "wp-block-wpzoom-recipe-card-block-recipe-card">  ${content.rendered} 
                            </a>
-                           <div class="blog-card-date">${date}</div></a>  </section>
+                           <div class="blog-card-date">${dateOnBlog}</div></a>  </section>
                            `
     }
 

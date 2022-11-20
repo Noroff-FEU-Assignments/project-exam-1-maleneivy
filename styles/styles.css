@@ -76,6 +76,7 @@ footer {
     text-decoration: none;
     letter-spacing: 2px;
     cursor: pointer;
+    box-shadow: rgba(77, 70, 70, 0.35) 0px 5px 20px;
 }
 
 .cta-button:hover {
@@ -359,6 +360,33 @@ header a:active {
     font-weight: 400;
     text-decoration: none;
     letter-spacing: 2px;
+    border: none;
+}
+
+.contact-form .cta-button:hover {
+    color: #fff;
+}
+
+/* Loader */
+
+.loader {
+    border: 20px solid #f3f3f3;
+    border-top: 20px solid #58845e;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /*media tablet styles*/
@@ -513,12 +541,26 @@ header a:active {
     .section-banner-dinner {
         margin-top: 70px;
     }
+
+    .loader {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+
+    }
 }
 
 /*media mobile styles*/
 @media only screen and (max-width:926px) {
 
     /* Header mobile */
+
+
+    .loader {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
 
     header {
         display: grid;
@@ -679,9 +721,17 @@ header a:active {
         width: 30px;
     }
 
+    .social-logo:hover {
+        width: 35px;
+    }
+
     .footer-li {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer-nav {
+        padding-top: 5px;
     }
 
     .social-media-icons {
@@ -692,6 +742,12 @@ header a:active {
         padding: 0 0 15px 0;
         font-size: 0.8em;
 
+    }
+
+    .contact-form input,
+    .contact-form label,
+    .contact-form textarea {
+        font-size: 1em;
     }
 }
 
@@ -735,28 +791,5 @@ header a:active {
         padding: 0 0 20px 0;
         ;
         font-size: 0.6em;
-    }
-}
-
-
-/* Loader */
-
-.loader {
-    border: 20px solid #f3f3f3;
-    border-top: 20px solid #58845e;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-left: 50%;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
     }
 }

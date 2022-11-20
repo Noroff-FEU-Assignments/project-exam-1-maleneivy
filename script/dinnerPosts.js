@@ -24,14 +24,17 @@ function createDinnerCarousel(dinnerBlogsPosts) {
 
     for (let i = 0; i < dinnerBlogsPosts.length; i++) {
         const content = dinnerBlogsPosts[i].content;
-        const date = dinnerBlogsPosts[i].date;
+        let dateString = dinnerBlogsPosts[i].date;
+        let newDate = new Date(dateString);
+
+        let dateOnBlog = `Posted: ${newDate.toDateString()}`
 
         dinnerPostsContainer.innerHTML += `
         <li class="blog-post-wrapper">
         <div class="latest-blog-post">
         <a href="specificBlog.html?id=${dinnerBlogsPosts[i].id}">
                 ${content.rendered}
-                <div class="blog-card-date">${date}</div></a>
+                <div class="blog-card-date">${dateOnBlog}</div></a>
         </li>
         `
     }

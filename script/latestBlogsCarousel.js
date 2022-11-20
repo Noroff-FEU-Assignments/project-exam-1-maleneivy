@@ -27,7 +27,11 @@ function getLatestBlogPosts(blogPosts) {
 
     for (let i = 0; i < blogPosts.length; i++) {
         const content = blogPosts[i].content;
-        const date = blogPosts[i].date;
+
+        let dateString = blogPosts[i].date;
+        let newDate = new Date(dateString);
+
+        let dateOnBlog = `Posted: ${newDate.toDateString()}`
 
         sliderMain.innerHTML += `
         
@@ -35,7 +39,7 @@ function getLatestBlogPosts(blogPosts) {
         <div class="latest-blog-post">
         <a href="specificBlog.html?id=${blogPosts[i].id}">
                 ${content.rendered}
-                <div class="blog-card-date">${date}</div></a>
+                <div class="blog-card-date">${dateOnBlog}</div></a>
         </li>
    
         `
