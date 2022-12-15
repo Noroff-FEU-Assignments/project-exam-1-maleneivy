@@ -1,6 +1,6 @@
 # Healthy Living Blog Site
 
-![image](optimized-img/healthy-living.jpg)
+![image](healthy-living.jpg)
 
 ## Description
 
