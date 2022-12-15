@@ -18,8 +18,6 @@ The content for the blog is stored at Wordpress and making a call to the REST Ap
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
 - [Javascript](https://www.javascript.com/)
 
 
