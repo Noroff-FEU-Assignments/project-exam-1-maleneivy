@@ -37,7 +37,7 @@ This is a project made for a person who wants to run a blog site without knowing
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/maleneivy/csmuseum.git
+git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-maleneivy.git
 ```
 
 2. Install the dependencies:
